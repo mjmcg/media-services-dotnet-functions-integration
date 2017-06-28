@@ -227,6 +227,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
         }
 
         log.Info($"Using asset Id : {asset.Id}");
+        log.Info($"Using program Id : {program.Id}");
 
         // Table storage to store and real the last timestamp processed
         // Retrieve the storage account from the connection string.
