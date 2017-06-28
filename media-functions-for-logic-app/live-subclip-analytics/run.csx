@@ -214,9 +214,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
         }
 
         programState = program.State.ToString();
-        programid = programid.Id;
-        log.Info($"Using program Id : {programid.Id}");
-        
+        programid = program.Id;
         var asset = GetAssetFromProgram(programid);
 
         if (asset == null)
